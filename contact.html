@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Nusantara Mart</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(to bottom, #b30000 50%, #ffffff 50%);
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h2 {
+      color: white;
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      font-size: 40px;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    .hero h2::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 3px;
+      background: gold;
+      margin: 15px auto;
+    }
+
+    /* FORM BOX */
+    .contact-box {
+      background: #ffffff;
+      color: #333;
+      border-radius: 15px;
+      padding: 30px;
+      margin-top: -50px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .form-control {
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 10px rgba(179, 0, 0, 0.3);
+      border-color: #b30000;
+    }
+
+    /* BUTTON */
+    .btn-custom {
+      background: #b30000;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 25px;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background: #800000;
+    }
+
+    /* INFO */
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info h5 {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .info-box {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      backdrop-filter: blur(5px);
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Hubungi Kami</h2>
+</div>
+
+<!-- FORM -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="contact-box">
+
+        <h4 class="mb-4 text-center">Kirim Pesan</h4>
+
+        <form>
+          <div class="mb-3">
+            <label>Nama Lengkap</label>
+            <input type="text" class="form-control" placeholder="Masukkan nama">
+          </div>
+
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Masukkan email">
+          </div>
+
+          <div class="mb-3">
+            <label>Pesan</label>
+            <textarea class="form-control" rows="4" placeholder="Tulis pesan..."></textarea>
+          </div>
+
+          <div class="text-center">
+            <button class="btn btn-custom">Kirim Pesan</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO KONTAK -->
+  <div class="row contact-info mt-5">
+
+    <div class="col-md-4">
+      <div class="info-box">
+        <h5>📍 Alamat</h5>
+        <p>Indonesia - UMKM Nusantara</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="info-box">
+        <h5>📧 Email</h5>
+        <p>nusantaramart@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="info-box">
+        <h5>📞 Telepon</h5>
+        <p>+62 858 3272 6860</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Nusantara Mart TiFelSur | UMKM Indonesia 🇮🇩</p>
+</footer>
+
+</body>
+</html>

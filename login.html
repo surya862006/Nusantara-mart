@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Nusantara Mart</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background: linear-gradient(to right, #1f1f1f, #2c2c2c);
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(to bottom, #b30000 50%, #ffffff 50%);
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h2 {
+      font-family: 'Georgia', serif;
+      font-weight: bold;
+      font-size: 35px;
+      color: white;
+      text-shadow: 2px 2px 8px black;
+    }
+
+    .hero h2::after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 3px;
+      background: gold;
+      margin: 15px auto;
+    }
+
+    /* LOGIN BOX */
+    .login-box {
+      background: white;
+      color: #333;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: -40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .form-control {
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .form-control:focus {
+      border-color: #b30000;
+      box-shadow: 0 0 10px rgba(179,0,0,0.3);
+    }
+
+    /* BUTTON */
+    .btn-login {
+      background: #b30000;
+      color: white;
+      border-radius: 25px;
+      padding: 10px;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .btn-login:hover {
+      background: #800000;
+    }
+
+    .extra {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .extra a {
+      color: #b30000;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .extra a:hover {
+    background: #b30000;
+    color: white;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>Login Nusantara Mart</h2>
+</div>
+
+<!-- FORM -->
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+
+      <div class="login-box">
+        <h4 class="text-center mb-4">Masuk ke Akun</h4>
+
+        <form>
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Masukkan email">
+          </div>
+
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" placeholder="Masukkan password">
+          </div>
+
+          <button class="btn btn-login">Login</button>
+        </form>
+
+        <div class="extra">
+          <p>Belum punya akun? 
+            <a href="register.html">Daftar</a>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Nusantara Mart | UMKM Indonesia 🇮🇩</p>
+</footer>
+
+</body>
+</html>
